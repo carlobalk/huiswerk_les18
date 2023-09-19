@@ -1,0 +1,47 @@
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-image: url('huizen.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 60px;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .left-column {
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        }
+
+        .right-column {
+            flex-basis: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .left-column {
+                flex-basis: 50%;
+                margin-right: 10px;
+                margin-bottom: 0;
+            }
+
+            .right-column {
+                flex-basis: 50%;
+            }
+        }
